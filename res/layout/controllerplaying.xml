@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/view_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/controller_holder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ctrl_tv_menu"
+        android:layout_width="300dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/launcher_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/p1"
+            android:layout_width="300dip"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager1"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <!--
+	<GridView
+    android:id="@+id/grid_left"
+    android:layout_width="90pt"
+    android:layout_height="190pt"
+    android:gravity="center"
+    android:numColumns="1"
+    android:scrollbars="vertical"
+    android:stretchMode="columnWidth"
+    android:verticalSpacing="20dp" 
+    android:layout_marginLeft="10dip"
+	android:layout_alignParentLeft="true"
+	android:layout_centerVertical="true"
+	android:listSelector="@drawable/bg_menu"
+    />
+        -->
+
+        <GridView
+            android:id="@+id/grid"
+            android:layout_width="280dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p1"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:gravity="center"
+            android:listSelector="@drawable/bg_menu"
+            android:numColumns="1"
+            android:scrollbars="vertical"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dip"
+        android:layout_marginTop="30dip"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="80dip" >
+    </TextView>
+
+</RelativeLayout>

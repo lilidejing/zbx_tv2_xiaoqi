@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="90dip"
+    android:layout_height="wrap_content"
+    android:id="@+id/grid_up"
+    android:gravity="center"
+    android:numColumns="1"
+    android:fastScrollEnabled="true"
+    android:stretchMode="columnWidth"
+    android:horizontalSpacing="20dip"
+    android:layout_marginLeft="20dip"
+	
+	android:layout_centerVertical="true"
+	android:listSelector="@drawable/bg_menu"
+	 android:scrollbarStyle="outsideOverlay"
+     >
+    
+    
+
+</GridView>

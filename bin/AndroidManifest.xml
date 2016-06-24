@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.baidu.cyberplayersdksample1_xiaoqi"
+    android:versionCode="1"
+    android:versionName="1.0" >
+	<!-- <uses-sdk android:minSdkVersion="4" /> -->
+	
+	<uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="17" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:debuggable="true" >
+        <activity
+            android:name="com.baidu.cyberplayersdksample1_xiaoqi.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+            <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> -->
+        </activity>
+        
+        
+		<activity
+            android:name="com.csw.tv.jl_tv"
+            android:label="@string/app_name"
+            android:theme="@style/transActivity" >
+        </activity>
+		<activity
+            android:name="com.csw.tv.main_welcome"
+            android:label="@string/app_name" >
+        </activity>
+        
+        
+       	<activity android:label="PlayingActivity"
+            android:name="com.baidu.cyberplayersdksample1_xiaoqi.VideoViewPlayingActivity"
+            android:configChanges="keyboardHidden|orientation" 
+            android:screenOrientation="landscape"
+            android:exported="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter >              
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        
+       	<activity android:name="com.baidu.cyberplayersdksample1_xiaoqi.WelcomeActivity"
+       	    android:configChanges="keyboardHidden|orientation" 
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+       	
+       	    
+       	    <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+       	</activity>
+        
+    </application>
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> 
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<!-- 在SD卡中创建与删除文件权限 -->
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<!-- 向SD卡写入数据权限 -->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> 
+
+	
+	    <!-- 添加访问GSP定位权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    
+    <!-- 使用网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 接受引导完成（用于开机自动启动） -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 系统窗口（悬浮窗） -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+
+
+    <!-- 访问网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+        
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+	<!-- 在SD卡中创建与删除文件权限 -->
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<!-- 向SD卡写入数据权限 -->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> 	
+	
+	
+	
+	
+</manifest>

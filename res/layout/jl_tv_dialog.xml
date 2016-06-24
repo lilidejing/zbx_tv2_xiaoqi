@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"  
+     >
+    <RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="410pt"
+    android:layout_height="225pt"
+    android:layout_centerInParent = "true"
+     android:background="@drawable/tv_menu_bg"
+    >
+
+	    
+	<ImageButton
+		android:id="@+id/cancel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginRight="10dip"
+		android:src="@drawable/back"
+		android:background="#0000003D"
+		android:layout_gravity="center_vertical"
+		
+	/> 
+	
+		<ImageButton
+		android:id="@+id/hengfu"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginRight="10dip"
+		android:src="@drawable/weishi_hengfu"
+		android:background="#0000003D"
+		android:layout_gravity="center_vertical"
+		android:layout_centerHorizontal = "true"
+		
+	/> 
+
+	<GridView
+    android:id="@+id/grid_left"
+    android:layout_width="60pt"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:numColumns="1"
+    android:scrollbars="vertical"
+    android:stretchMode="columnWidth"
+    android:verticalSpacing="20dp" 
+	android:layout_below = "@+id/cancel"
+	android:layout_alignParentLeft="true"
+	
+    />
+	
+
+
+<GridView
+    android:id="@+id/grid"
+    android:layout_width="340pt"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:numColumns="4"
+    android:scrollbars="vertical"
+    android:stretchMode="columnWidth"
+    android:verticalSpacing="20dp" 
+	android:layout_below="@+id/hengfu"
+	android:layout_alignParentRight="true"
+	android:layout_toRightOf="@+id/grid_left"
+    />
+</RelativeLayout>
+</RelativeLayout>

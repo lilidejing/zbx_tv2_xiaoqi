@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tvinformation>
+    
+
+	<channelType id="1" typeName="测试频道" >
+	     
+	    
+		    <!-- <program id="1" programName="节目1">http://76.73.18.178:8000/162.ch?u=root:p=1234</program>
+			<program id="2" programName="节目2">http://76.73.18.178:8000/165.ch?u=root:p=1234</program>
+		    <program id="3" programName="节目3">http://76.73.18.178:8000/169.ch?u=root:p=1234</program>
+			<program id="4" programName="节目4">http://76.73.18.178:8000/204.ch?u=root:p=1234</program>
+			 -->
+		    <program id="5" programName="新节目77.ch">http://76.73.18.178:8000/77.ch?u=root:p=1234</program>
+		    <program id="6" programName="新节目74.ch">http://76.73.18.178:8000/74.ch?u=root:p=1234</program>
+		    <program id="7" programName="新节目71.ch">http://76.73.18.178:8000/71.ch?u=root:p=1234</program>
+		    <program id="8" programName="新节目68.ch">http://173.208.190.106:8000/68.ch?u=root:p=1234</program>
+		    <program id="9" programName="新节目60.ch">http://173.208.190.106:8000/60.ch?u=root:p=1234</program>
+		    <program id="10" programName="新节目92.ch">http://173.208.190.106:8000/92.ch?u=root:p=1234</program>
+		    
+	</channelType>
+	
+	<channelType id="2" typeName="台湾频道" >
+	     
+		    <program id="1" programName="本湾台">rtsp://116.199.127.68/bengang</program>
+			<program id="2" programName="凤凰台湾">http://live.3gv.ifeng.com/live/hongkong.m3u8</program>
+		    <program id="3" programName="凤凰中文">http://live.3gv.ifeng.com/live/hongkong.m3u8</program>
+			<program id="4" programName="台湾卫视">http://live.3gv.ifeng.com/live/hongkong.m3u8</program>
+		 
+	</channelType>
+	
+	<channelType id="3" typeName="欧美频道" >
+	     
+		    <program id="1" programName="CNN">rtsp://116.199.127.68/bengang</program>
+			<program id="2" programName="MADEINCHINA">http://live.3gv.ifeng.com/live/hongkong.m3u8</program>
+		    <program id="3" programName="LIGUOJING">http://live.3gv.ifeng.com/live/hongkong.m3u8</program>
+			<program id="4" programName="SHITIANCAI">http://live.3gv.ifeng.com/live/hongkong.m3u8</program>
+		 
+	</channelType>
+	
+</tvinformation>

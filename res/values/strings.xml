@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Xiaoqi Live</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    
+	
+
+    
+    <string name="soft_update_no">Is the latest version</string>
+    <string name="soft_update_title">Find a new version</string>
+    <string name="soft_update_info">If need to update to the latest version</string>
+    <string name="soft_update_updatebtn">Yes</string>
+    <string name="soft_update_later">No</string>
+    <string name="soft_updating">Downloading...</string>
+    <string name="soft_update_cancel">Cancel</string>
+
+</resources>
